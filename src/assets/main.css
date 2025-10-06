@@ -1,8 +1,61 @@
-@import "tailwindcss";
-@import "@nuxt/ui";
+@import 'tailwindcss';
+@import '@nuxt/ui';
 
 @theme static {
-  /* --color-primary: #FF891C; */
-  --color-primary-50: #FF891C;
-  --color-secondary: var(--color-blue-500);
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  /* 主要色碼配置 */
+  --color-primary-50: #fff3e3;
+  --color-primary-100: #ffe0ba;
+  --color-primary-200: #ffcc8e;
+  --color-primary-300: #ffb764;
+  --color-primary-400: #ffa649;
+  --color-primary-500: #ff951c;
+  --color-primary-600: #ff891c;
+  --color-primary-700: #ff891c;
+  --color-primary-800: #ff891c;
+  --color-primary-900: #ff891c;
+  --color-primary-950: #ff891c;
+
+  /* 次要色碼配置 */
+  --color-secondary-50: #e2eaff;
+  --color-secondary-100: #b4c9ff;
+  --color-secondary-200: #82a7f4;
+  --color-secondary-300: #4d85e4;
+  --color-secondary-400: #346bbe;
+  --color-secondary-500: #365599;
+  --color-secondary-600: #6ab4ff;
+  --color-secondary-700: #6ab4ff;
+  --color-secondary-800: #6ab4ff;
+  --color-secondary-900: #6ab4ff;
+  --color-secondary-950: #6ab4ff;
+
+
+  /* 通知色碼配置 */
+  /* --color-green-500: #6fcf97;
+  --color-red-500: #f4715b;
+  --color-yellow-500: #ebb72b; */
+
+  /* Container 斷點配置 */
+  --ui-container: 1280px;
+  --ui-container-sm: 640px;
+  --ui-container-md: 768px;
+  --ui-container-lg: 1024px;
+  --ui-container-xl: 1280px;
+  --ui-container-2xl: 1536px;
+
+  /* Container 內邊距配置 */
+  --ui-container-padding-sm: 1rem; /* 16px */
+  --ui-container-padding-md: 1.5rem; /* 24px */
+  --ui-container-padding-lg: 2rem; /* 32px */
+  --ui-container-padding-xl: 3rem; /* 48px */
+
+  /* 背景色配置 */
+  --color-background: var(--color-primary-100);
+}
+
+/* 全域背景設定 */
+body {
+  background-color: var(--color-background);
+  color: var(--color-gray-900);
+  font-family: var(--font-sans);
 }

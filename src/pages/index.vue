@@ -1,7 +1,5 @@
 <template>
-  <div class="bg-amber-50">
-    <h1>About</h1>
-  </div>
+  <RouterView />
 </template>
 
 <script lang="ts" setup>

@@ -7,7 +7,20 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [vue(), vueDevTools(), ui()],
+  plugins: [
+    vue(), 
+    vueDevTools(), 
+    ui({
+      ui: {
+        container: {
+          base: 'w-full max-w-(--ui-container) mx-auto px-4 sm:px-0 lg:px-3'
+        },
+        main: {
+          base: 'min-h-[calc(100vh-var(--ui-header-height))]'
+        }
+      }
+    })
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
